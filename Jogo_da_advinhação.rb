@@ -1,8 +1,6 @@
-def boas_vindas #função não pode ser definida com caractere maiúsculo.
-#.upcase deixa todos os caracteres em caixa alta
+def boas_vindas 
   puts 'Bem vindo ao JOGO DA ADVINHAÇÃO'.upcase 
  puts 'Qual é seu nome?'
- #codigo .strip faz a correção da quebra de linha e mantem tudo na mesma frase.
  nome = gets.strip.capitalize
  puts 'Qual é seu sobrenome?'
  snome = gets.strip.capitalize
@@ -44,8 +42,8 @@ def jogo
 
 
 puts "Deseja iniciar o jogo? (S/N) "
-iniciar = gets.chomp # .chomp retorna string. 
-if iniciar == "s" or "S"
+iniciar = gets.chomp
+if iniciar == "s"
   boas_vindas
   jogo
 else
