@@ -41,11 +41,15 @@ def jogo
  end  
 
 
-puts "Deseja iniciar o jogo? (S/N) "
-iniciar = gets.chomp
-if iniciar == "s"
+sim = 's'
+puts "Deseja iniciar o jogo? (s/n) "
+resposta = gets.chomp
+case resposta
+when 's'
   boas_vindas
   jogo
+when 'n'
+  puts 'menu encerrado'
 else
-  puts "menu encerrado."
+  puts 'valor invalido, menu encerrado.'
 end
